@@ -1,4 +1,4 @@
-package com.study.model;
+package com.study.employee.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,14 +10,11 @@ public class Employee implements Serializable  {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false,updatable = false)
     private Long id;
-
-
     private String name;
     private String jobTitule;
     private String phone;
     private  String email;
     private String imageUrl;
-
     @Column(nullable = false,updatable = false)
     private String employeeCode;
 
