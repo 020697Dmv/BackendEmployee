@@ -20,6 +20,8 @@ public class Employee implements Serializable  {
     private String imageUrl;
     @Column(nullable = false,updatable = false)
     private String employeeCode;
+    private String employeeCodeOne;
+
 
     public Employee(){}
 
@@ -89,6 +91,14 @@ public class Employee implements Serializable  {
         this.employeeCode = employeeCode;
     }
 
+    public String getEmployeeCodeOne() {
+        return employeeCodeOne;
+    }
+
+    public void setEmployeeCodeOne(String employeeCodeOne) {
+        this.employeeCodeOne = employeeCodeOne;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -99,6 +109,7 @@ public class Employee implements Serializable  {
                 ", email='" + email + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
                 ", employeeCode='" + employeeCode + '\'' +
+                ", employeeCodeOne='" + employeeCodeOne + '\'' +
                 '}';
     }
 }
