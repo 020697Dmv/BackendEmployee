@@ -3,6 +3,9 @@ package com.study.employee.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/*
+Class Employee
+ */
 @Entity
 public class Employee implements Serializable  {
 
